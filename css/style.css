@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-image: url(../imagenes/backround.png);
+	background-repeat: repeat;
+}
+
+nav{
+	background-color:#12294b;
+}
+
+	nav ul{
+	list-style: none;
+	}
+
+		nav ul li{
+		font-size: 2rem;
+		display: inline-block;
+		margin: 0.7rem 1.5rem
+
+		}
+
+			nav ul li a{
+				text-decoration: none;
+				color: #EEECE5;
+				font-weight: 400
+			}
+
+header{
+	background-image: url(../imagenes/header.png);
+}
+	
+	header img{
+		width: 20%;
+		vertical-align: middle;
+		margin-left: 20rem
+
+	}
+
+header input{
+	width: 20rem 7rem;
+	vertical-align: middle;
+}
+
+h1{
+	font-size: 3rem;
+	text-align: center;
+	background-color: rgb(152, 36,36);
+	color: white;
+	margin:2rem 1rem 1rem 1rem
+}
+
+h3{
+	font-size: 2rem;
+	font-weight: 400;
+	color: white;
+	background-color:rgb(79, 128, 64);
+}
+
+p{
+	padding: 1rem
+}
+
+section article{
+	width: 30%;
+	background-color: white;
+	margin: 0.1rem;
+	display: inline-block;
+	position: center;
+}
+
+section article p{
+	background-color: #EEECE5;
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding: 1rem;
+}
+
+section article img{
+	width: 70%;
+	position: center;
+	margin: 1rem
+}
+
+div img{
+	width: 70%;
+	position: center;
+	margin: 1rem;
+}
+
+footer{
+	background-color: rgb(53, 93, 47);
+	margin-top: 1rem
+}
+		
+		footer p{
+			color: white
+		}
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textBold{
+	font-weight: 700;
+}
+
+.textSuperBold{
+	font-weight: 800;
+}
+
+.sectionArticle{
+	width: 70%;
+	position: center;
+	size: 70%
+}
