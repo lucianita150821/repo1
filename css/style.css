@@ -52,6 +52,12 @@ header input{
 	vertical-align: middle;
 }
 
+header img:hover{
+	transform: scale(1.02);
+	cursor: pointer;
+	transition: transform 0.4s;
+}
+
 h1{
 	font-size: 3rem;
 	text-align: center;
