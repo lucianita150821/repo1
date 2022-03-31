@@ -11,8 +11,7 @@ html{
 }
 
 body{
-	background-image: url(../imagenes/backround.png);
-	background-repeat: repeat;
+	background-color: white;
 }
 
 nav{
@@ -21,41 +20,36 @@ nav{
 
 	nav ul{
 	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	}
 
 		nav ul li{
 		font-size: 2rem;
 		display: inline-block;
-		margin: 0.7rem 1.5rem
-
 		}
 
 			nav ul li a{
 				text-decoration: none;
 				color: #EEECE5;
-				font-weight: 400
+				font-weight: 400;
 			}
+ 
+nav ul li a:hover{
+	font-weight: 500;
+	color: lightgrey;
+}
 
 header{
-	background-image: url(../imagenes/header.png);
-}
-	
-	header img{
-		width: 20%;
-		vertical-align: middle;
-		margin-left: 20rem
-
-	}
-
-header input{
-	width: 20rem 7rem;
-	vertical-align: middle;
+	background-image: url(./imagenes/header.png);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-header img:hover{
-	transform: scale(1.02);
-	cursor: pointer;
-	transition: transform 0.4s;
+header img{
+	width: 150px;
 }
 
 h1{
@@ -71,6 +65,11 @@ h3{
 	font-weight: 400;
 	color: white;
 	background-color:rgb(79, 128, 64);
+	text-align: center;
+	margin-top:0;
+	margin-bottom: 0;
+	margin-left: 4.7rem;
+	margin-right: 4.7rem;
 }
 
 p{
@@ -78,7 +77,6 @@ p{
 }
 
 section article{
-	width: 30%;
 	background-color: white;
 	margin: 0.1rem;
 	display: inline-block;
@@ -86,10 +84,11 @@ section article{
 }
 
 section article p{
-	background-color: #EEECE5;
+	background-color: white;
 	font-size: 1.5rem;
 	font-weight: 400;
 	padding: 1rem;
+	display: inline-block;
 }
 
 section article img{
@@ -104,14 +103,75 @@ div img{
 	margin: 1rem;
 }
 
+main section{
+	width: 90%;
+	position: center;
+}
+	main section article{
+		widht:30%;
+	}
+		main section article img{
+		width: 80%;
+		display: inline-flex;
+		}
+
+aside{
+	position: center;
+}
+
+aside img{
+	background-color: rgb(79, 128, 64);
+	margin: 0.1rem;
+	position: center;
+}
+
+
+aside section article a{
+	text-decoration: none;
+	color: #EEECE5;
+	font-weight: 400
+}
+
 footer{
 	background-color: rgb(53, 93, 47);
-	margin-top: 1rem
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+}
+
+.footerRedes{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 		
-		footer p{
-			color: white
-		}
+footer p{
+	color: white
+}
+
+article h3 a{
+	font-style: none;
+	text-decoration: none;
+	color: #EEECE5;
+}
+
+figcaption{
+	margin: 2rem;
+}
+
+.botonera{
+	background-color: #12294b;
+	position:sticky;
+	top: 0;
+	padding: 0,5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* Así estaba antes de pasar a mobile-first-
+	display: flex-end;
+	justify-content: space-between;
+	align-items: center; */
+}
 
 .textCenter{
 	text-align: center;
@@ -119,6 +179,11 @@ footer{
 
 .textRight{
 	text-align: right;
+}
+
+
+.fontSize{
+	font-size: 2rem;
 }
 
 .textBold{
@@ -129,8 +194,145 @@ footer{
 	font-weight: 800;
 }
 
-.sectionArticle{
-	width: 70%;
+.photoSize{
+	width: 50%;
 	position: center;
-	size: 70%
+	margin: 1rem;
+}
+
+.imagenHeroe{
+	align-items: center;
+	width: 100%;
+	margin: 0px;
+}
+
+.buscador{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.fotoIndex{
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+}
+
+/*Flex*/
+
+.container{
+	padding: 1rem;
+	border: solid 1rem white;
+	background-color: white;
+}
+
+.W-20{
+	width: 20%
+}
+
+.W-30{
+	width: 30%
+}
+
+.W-40{
+	width: 40%
+}
+
+.W-70{
+	width: 70%
+}
+
+.flexWrap{
+	flex-wrap: wrap;
+}
+
+.inlineFlex{
+ display: inline-flex;
+}
+
+.justifyContent{
+	justify-content: space-between;
+}
+
+/*Grids*/
+
+nav{
+	grid-area: nav;
+}
+
+header{
+	grid-area: header;
+}
+
+.imagenHeroe{
+	grid-area: heroe;
+}
+
+.container{
+	grid-area: main;
+}
+
+footer{
+	grid-area: footer;
+}
+
+
+/*Móvil 1 columna 5 filas*/
+
+.contenedorIndex{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas: "nav" "header" "heroe" "main" "footer";
+}
+
+/*Tablet*/
+
+@media (min-width: 768px){
+	.contenedorIndex{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-areas: "nav" "header" "heroe" "main" "footer";
+	}
+	.container{
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+/*Desktop*/
+@media (min-width: 1024px){
+	.contenedorIndex{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-areas: "nav" "header" "heroe" "main" "footer";
+	}
+	.container{
+		display: flex;
+		flex-direction: row;
+	}
+	nav ul{
+		flex-direction: row;
+		justify-content: space-around; 
+	}
+	nav ul li{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin top: 0;
+		margin-bottom: 0;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
+/*Animaciones*/
+
+.scale:hover{
+	transform: scale(1.05);
+	cursor: pointer;
+	transition: transform 0.5s;
 }
