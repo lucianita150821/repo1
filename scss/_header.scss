@@ -1,0 +1,17 @@
+// nesting
+
+header{
+	background-color:  white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.buscador{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		img{
+			width: 150px;
+		}
+	}
+}

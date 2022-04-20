@@ -1,0 +1,13 @@
+// nesting
+
+footer{
+	background-color: $mainColor;
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	.footerRedes{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+}
