@@ -1,15 +1,16 @@
-// variables globales
-
-$mainColor: #12294b;
-$secondColor: rgb(152, 36,36);
-$keyColor: #EEECE5;
-
 // reset
 
 *{
 	margin: 0;
 	padding: 0;
 }
+
+// variables globales
+
+$mainColor: #12294b;
+$secondColor: rgb(152, 36,36);
+$thirdColor: rgb(79, 128, 64);
+$keyColor: rgb(53, 93, 47);
 
 // sizing
 
@@ -18,3 +19,48 @@ $W-30: 30%;
 $W-40: 40%;
 $W-70: 70%;
 
+//extendS
+
+.btn-header{
+	margin: 1rem;
+	padding: 0.4rem;
+	background-color: $keyColor;
+	color: white;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	&:hover{
+		background-color: $secondColor;
+		cursor: pointer;
+	}
+}
+
+.btn-contacto{
+	@extend .btn-header;
+	background-color: black;
+	&:hover{
+	background-color: lightgrey;
+	color:grey;
+	cursor: pointer;
+	}
+}
+
+// mixins
+
+@mixin texto($fontSize, $background-color, $color){
+	font-size: $font-size;
+	background-color: $background-color;
+	color: $color;
+	padding: 4px;
+}
+
+// map
+
+.paleta(
+	'uno': #12294b,
+	'dos': rgb(152, 36,36),
+	'tres': rgb(53, 93, 47),
+	'cuatro': rgb(79, 128, 64),
+); 

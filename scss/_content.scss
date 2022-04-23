@@ -1,0 +1,7 @@
+h1{
+	@include texto(3rem, rgb(152, 36,36), white);
+}
+
+.bg-green{
+	background-color: map-get($map:$paleta,$key:'cuatro');
+}

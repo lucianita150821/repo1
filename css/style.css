@@ -53,6 +53,46 @@ header img{
 	width: 150px;
 }
 
+/* esto sería lo que pasaría en mi CSS si me funcionara SASS con el extend*/
+
+.btn-header{
+	margin: 1rem;
+	padding: 0.4rem;
+	background-color: rgb(53, 93, 47);
+	color: white;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+}
+
+.btn-header:hover{
+	cursor: pointer;
+	background-color: rgb(152, 36,36);
+}
+
+.btn-contacto{
+	margin: 1rem;
+	padding: 0.4rem;
+	background-color: black;
+	color: white;
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+}
+
+.btn-contacto:hover{
+	cursor: pointer;
+	background-color: lightgrey;
+	color: grey;
+}
+
+
+/*Cierra ejemplo de lo que pasaría con mi CSS si me funcionara SASS*/
+
 h1{
 	font-size: 3rem;
 	text-align: center;
@@ -65,13 +105,20 @@ h3{
 	font-size: 2rem;
 	font-weight: 400;
 	color: white;
-	background-color:rgb(79, 128, 64);
 	text-align: center;
 	margin-top:0;
 	margin-bottom: 0;
 	margin-left: 4.7rem;
 	margin-right: 4.7rem;
 }
+
+/* Ejemplo de  map*/
+
+.bg-green{
+	background-color: rgb(79, 128, 64);
+}
+
+/* Cierra ejemplo de clase hecha con map*/
 
 p{
 	padding: 1rem
