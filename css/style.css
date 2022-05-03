@@ -12,6 +12,7 @@ html{
 
 body{
 	background-color: white;
+	overflow-x: hidden;
 }
 
 nav{
@@ -180,6 +181,11 @@ aside section article a{
 	font-weight: 400
 }
 
+button a{
+	text-decoration: none;
+	color: white;
+}
+
 footer{
 	background-color: rgb(53, 93, 47);
 	margin-top: 1rem;
@@ -216,10 +222,6 @@ figcaption{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/* Así estaba antes de pasar a mobile-first-
-	display: flex-end;
-	justify-content: space-between;
-	align-items: center; */
 }
 
 
@@ -267,6 +269,17 @@ figcaption{
 	text-align: center;
 	width: 100%;
 	margin: 0px;
+}
+
+.parrafo{
+	font-size: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	margin-top: 0px;
+}
+
+.imagenError{
+	width: 30rem;
 }
 
 /*Flex*/
